@@ -689,6 +689,7 @@ end
 mpt._function_key = {
   [Key.t('<Tab>')] = next_item,
   [Key.t('<C-j>')] = next_item,
+  [Key.t('<C-n>')] = next_item,
   [Key.t('<ScrollWheelDown>')] = next_item,
   [Key.t('<S-tab>')] = previous_item,
   [Key.t('<C-k>')] = previous_item,
