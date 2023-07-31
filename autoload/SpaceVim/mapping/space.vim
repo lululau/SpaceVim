@@ -944,6 +944,9 @@ function! s:maximize_minimize_win() abort
 
 endfunction
 
+nmap <c-x><c-o><c-d> :call <SID>maximize_minimize_win()<cr>
+imap <c-x><c-o><c-d> <c-o>:call <SID>maximize_minimize_win()<cr>
+
 function! s:describe_current_time() abort
   let time = s:TIME.current_date() . ' ' . s:TIME.current_time()
   echo time
