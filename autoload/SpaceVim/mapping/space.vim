@@ -944,6 +944,8 @@ function! s:maximize_minimize_win() abort
 
 endfunction
 
+nmap <D-S-CR> :call <SID>maximize_minimize_win()<cr>
+imap <D-S-CR> <c-o>:call <SID>maximize_minimize_win()<cr>
 nmap <c-x><c-o><c-d> :call <SID>maximize_minimize_win()<cr>
 imap <c-x><c-o><c-d> <c-o>:call <SID>maximize_minimize_win()<cr>
 
