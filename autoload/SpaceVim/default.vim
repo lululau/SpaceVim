@@ -272,6 +272,17 @@ function! SpaceVim#default#keyBindings() abort
   nnoremap <silent><M-Right> :<C-U>call <SID>tobur("next")<CR>
   nnoremap <silent><M-Left> :<C-U>call <SID>tobur("prev")<CR>
 
+
+  nnoremap <silent><D-1> :<C-u>call <SID>tobur(1)<CR>
+  nnoremap <silent><D-2> :<C-u>call <SID>tobur(2)<CR>
+  nnoremap <silent><D-3> :<C-u>call <SID>tobur(3)<CR>
+  nnoremap <silent><D-4> :<C-u>call <SID>tobur(4)<CR>
+  nnoremap <silent><D-5> :<C-u>call <SID>tobur(5)<CR>
+  nnoremap <silent><D-6> :<C-u>call <SID>tobur(6)<CR>
+  nnoremap <silent><D-7> :<C-u>call <SID>tobur(7)<CR>
+  nnoremap <silent><D-8> :<C-u>call <SID>tobur(8)<CR>
+  nnoremap <silent><D-9> :<C-u>call <SID>tobur(9)<CR>
+
 endfunction
 
 fu! s:tobur(num) abort
