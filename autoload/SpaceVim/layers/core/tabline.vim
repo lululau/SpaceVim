@@ -186,7 +186,8 @@ function! SpaceVim#layers#core#tabline#get() abort
   let all_tabline_items = []
   let shown_items = []
 
-  if tabpage_counts > 1
+  " if tabpage_counts > 1
+  if 0
     let current_tabnr = tabpagenr()
     let previous_tabnr = s:TAB.previous_tabpagenr()
     let matched_len = 0
