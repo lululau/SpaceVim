@@ -133,7 +133,7 @@ function! SpaceVim#layers#telescope#config() abort
 
   let lnum = expand('<slnum>') + s:lnum - 1
   call SpaceVim#mapping#space#def('nnoremap', ['f', 'f'],
-        \ "exe 'Telescope find_files cwd=' . fnamemodify(bufname('%'), ':p:h')",
+        \ "exe 'Telescope find_files hidden=true cwd=' . fnamemodify(bufname('%'), ':p:h')",
         \ ['find-files-in-buffer-directory',
         \ [
           \ '[SPC f f] is to find files in the directory of the current buffer',
@@ -145,7 +145,7 @@ function! SpaceVim#layers#telescope#config() abort
 
   let lnum = expand('<slnum>') + s:lnum - 1
   call SpaceVim#mapping#space#def('nnoremap', ['p', 'f'],
-        \ 'Telescope find_files',
+        \ 'Telescope find_files hidden=true',
         \ ['find-files-in-project',
         \ [
           \ '[SPC p f] is to find files in the root of the current project',
@@ -155,7 +155,7 @@ function! SpaceVim#layers#telescope#config() abort
           \ ]
           \ , 1)
 
-  nnoremap <silent> <C-p> :<C-u>Telescope find_files<cr>
+  nnoremap <silent> <C-p> :<C-u>Telescope find_files hidden=true<cr>
 
   let lnum = expand('<slnum>') + s:lnum - 1
   call SpaceVim#mapping#space#def('nnoremap', ['h', 'i'], 'call call('
